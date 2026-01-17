@@ -1,6 +1,13 @@
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { Outlet, RouterProvider, createRootRoute, createRoute, createRouter } from '@tanstack/react-router';
+import {
+	Outlet,
+	RouterProvider,
+	createHashHistory,
+	createRootRoute,
+	createRoute,
+	createRouter
+} from '@tanstack/react-router';
 
 import './styles/global.css';
 import reportWebVitals from './reportWebVitals.ts';
@@ -31,7 +38,8 @@ const router = createRouter({
 	defaultPreload: 'intent',
 	scrollRestoration: true,
 	defaultStructuralSharing: true,
-	defaultPreloadStaleTime: 0
+	defaultPreloadStaleTime: 0,
+	history: createHashHistory()
 });
 
 declare module '@tanstack/react-router' {
