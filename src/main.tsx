@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import {
 	Outlet,
 	RouterProvider,
-	createHashHistory,
 	createRootRoute,
 	createRoute,
 	createRouter
