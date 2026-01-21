@@ -114,7 +114,7 @@ export default function Index() {
 					</div>
 				</section>
 				<details className="my-5">
-					<summary className="cursor-pointer text-lg text-neutral-400 w-[1000px] mx-auto">
+					<summary className="cursor-pointer text-lg text-neutral-400 w-[1000px] mx-auto mb-5">
 						查看服务器的完整发展历程
 					</summary>
 					<div className="grid grid-cols-4 items-stretch p-5">
@@ -249,7 +249,7 @@ export default function Index() {
 					<div className="mt-5 flex flex-col gap-6 text-lg">
 						<Summary sum="服务器 IP 地址是什么？">
 							<p>
-								服务器的 IP 地址是动态变化的，你可以在<E href="">服务器状态页面</E>
+								服务器的 IP 地址是动态变化的，你可以在<E href="https://st.subilan.win/#/status">服务器状态页面</E>
 								查看最新的服务器 IP
 								地址。另外，请注意服务器开启了白名单，而白名单需要申请。
 							</p>
@@ -318,7 +318,7 @@ export default function Index() {
 							加入 QQ 群 <ArrowRightIcon size={20} />
 						</a>
 						<a
-							href="https://wjx.cn"
+							href="https://st.subilan.win/#/status"
 							target="_blank"
 							className="flex items-center gap-2 text-xl text-neutral-500 border-b border-neutral-500"
 						>
