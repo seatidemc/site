@@ -87,7 +87,7 @@ export default function Index() {
 					<img src="/slogan.png" draggable="false" className="h-[70px] object-contain" />
 					<div className="flex items-center gap-8">
 						<button
-							className="py-2 px-5 text-lg cursor-pointer shadow-xl rounded-xl border border-white/30 bg-linear-120 from-yellow-300 to-yellow-600 text-shadow-lg"
+							className="py-2 px-5 text-lg bg-yellow-500 text-shadow-2xs hover:scale-105 active:scale-95 text-shadow-neutral-500 transition-all shadow-neutral-600 shadow-[0_3px_10px_0] font-semibold rounded-xl border border-neutral-200/30"
 							onClick={() =>
 								document.getElementById('section-join')?.scrollIntoView()
 							}
@@ -95,7 +95,7 @@ export default function Index() {
 							立即加入
 						</button>
 						<button
-							className="py-2 px-5 text-lg cursor-pointer shadow-xl rounded-xl backdrop-blur-sm border border-white/30"
+							className="py-2 px-5 text-lg hover:backdrop-blur-xs transition-all hover:scale-105 active:scale-95 rounded-xl text-shadow-2xs bg-transparent backdrop-blur-lg border border-neutral-200/30"
 							onClick={() => document.getElementById('section-faq')?.scrollIntoView()}
 						>
 							常见问题
@@ -250,7 +250,8 @@ export default function Index() {
 					<div className="mt-5 flex flex-col gap-6 text-lg">
 						<Summary sum="服务器 IP 地址是什么？">
 							<p>
-								服务器的 IP 地址是动态变化的，你可以在<E href="https://st.subilan.win/#/status">服务器状态页面</E>
+								服务器的 IP 地址是动态变化的，你可以在
+								<E href="https://st.subilan.win/#/status">服务器状态页面</E>
 								查看最新的服务器 IP
 								地址。另外，请注意服务器开启了白名单，而白名单需要申请。
 							</p>
