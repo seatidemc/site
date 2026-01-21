@@ -1,3 +1,4 @@
+import { oss } from '@/utils';
 import { ArrowRightIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
 
@@ -79,7 +80,7 @@ export default function Index() {
 		<>
 			<section
 				className="text-white h-dvh flex items-center justify-center bg-center bg-cover bg-no-repeat"
-				style={{ backgroundImage: `url(/Subilan房子的小道.jpeg)` }}
+				style={{ backgroundImage: `url(${oss('Subilan房子的小道.jpg')})` }}
 			>
 				<div className="flex flex-col items-center gap-5 max-w-[700px]">
 					<img src="/seatide-txt-white.png" draggable="false" className="h-[150px]" />
@@ -189,7 +190,7 @@ export default function Index() {
 						<p>在此之上，我们便能构建一个和谐又简单的社群。</p>
 					</>
 				}
-				img="/酒馆旁的地下仓库入口.png"
+				img={oss('酒馆旁的地下仓库入口.jpg')}
 			/>
 			<Hr />
 			<TwoCol
@@ -197,7 +198,7 @@ export default function Index() {
 				grids="1fr 1fr"
 				label="尽情发挥"
 				labelColor="text-green-600"
-				img="/服务器地狱交通20250221.png"
+				img={oss('服务器地狱交通20250221.jpg')}
 				title={
 					<>
 						无限延伸的地图
@@ -224,7 +225,7 @@ export default function Index() {
 				grids="1fr 2fr"
 				label="高效运转"
 				labelColor="text-blue-600"
-				img="/春分城堡.jpeg"
+				img={oss('春分城堡.jpeg')}
 				title={
 					<>
 						基于阿里云 ECS
