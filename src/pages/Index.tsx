@@ -86,7 +86,7 @@ export default function Index() {
 					<div
 						style={{ backgroundImage: `url(/seatide-txt-white.png)` }}
 						draggable="false"
-						className="h-[100px] drop-shadow-lg w-[300px] lg:w-auto lg:h-[150px] bg-contain bg-no-repeat bg-center"
+						className="h-[100px] drop-shadow-lg w-[300px] lg:w-[500px] lg:h-[150px] bg-contain bg-no-repeat bg-center"
 					/>
 					<img
 						src="/slogan.png"
