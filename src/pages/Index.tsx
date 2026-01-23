@@ -28,10 +28,10 @@ function TwoCol(props: {
 	);
 
 	return (
-		<section className="py-20 flex flex-col items-center leading-normal">
-			<div className="w-250">
+		<section className="py-15 lg:py-20 flex flex-col items-center leading-normal">
+			<div className="lg:w-250 mx-5 lg:mx-0">
 				<div
-					className="grid gap-10"
+					className="flex flex-col lg:grid gap-10"
 					style={{
 						gridTemplateColumns:
 							typeof props.grids === 'string' ? props.grids : props.grids.join(' ')
@@ -83,11 +83,24 @@ export default function Index() {
 				style={{ backgroundImage: `url(${oss('Subilan房子的小道.jpg')})` }}
 			>
 				<div className="flex flex-col items-center gap-5 max-w-[700px]">
-					<img src="/seatide-txt-white.png" draggable="false" className="h-[150px]" />
-					<img src="/slogan.png" draggable="false" className="h-[70px] object-contain" />
+					<div
+						style={{ backgroundImage: `url(/seatide-txt-white.png)` }}
+						draggable="false"
+						className="h-[100px] drop-shadow-lg w-[300px] lg:w-auto lg:h-[150px] bg-contain bg-no-repeat bg-center"
+					/>
+					<img
+						src="/slogan.png"
+						draggable="false"
+						className="hidden lg:block h-[70px] object-contain"
+					/>
+					<p className="lg:hidden text-lg text-shadow-md text-center">
+						高效运行的 Minecraft 服务器
+						<br />
+						基于阿里云 ECS
+					</p>
 					<div className="flex items-center gap-8">
 						<button
-							className="py-2 px-5 text-lg bg-yellow-500 text-shadow-2xs hover:scale-105 active:scale-95 text-shadow-neutral-500 transition-all shadow-neutral-600 shadow-[0_3px_10px_0] font-semibold rounded-xl border border-neutral-200/30"
+							className="py-2 px-5 lg:text-lg bg-yellow-400 text-yellow-900 lg:hover:scale-105 lg:active:scale-95 transition-all font-semibold rounded-xl border border-neutral-200/30"
 							onClick={() =>
 								document.getElementById('section-join')?.scrollIntoView()
 							}
@@ -95,7 +108,7 @@ export default function Index() {
 							立即加入
 						</button>
 						<button
-							className="py-2 px-5 text-lg hover:backdrop-blur-xs transition-all hover:scale-105 active:scale-95 rounded-xl text-shadow-2xs bg-transparent backdrop-blur-lg border border-neutral-200/30"
+							className="py-2 px-5 lg:text-lg lg:hover:backdrop-blur-xs transition-all lg:hover:scale-105 lg:active:scale-95 rounded-xl text-shadow-2xs bg-transparent backdrop-blur-lg border border-neutral-200/30"
 							onClick={() => document.getElementById('section-faq')?.scrollIntoView()}
 						>
 							常见问题
@@ -104,9 +117,9 @@ export default function Index() {
 				</div>
 			</section>
 			<Hr />
-			<div className="py-20">
+			<div className="py-10 lg:py-20 px-5 lg:px-0">
 				<section className="flex flex-col items-center">
-					<div className="w-[1000px]">
+					<div className="lg:w-[1000px]">
 						<p className="text-3xl leading-normal">
 							SEATiDE<span className="text-neutral-400">（读音“C 态”）</span>
 							是一个始于 2018 年的 Minecraft 模组服务器玩家社群，曾于 2024
@@ -115,11 +128,11 @@ export default function Index() {
 					</div>
 				</section>
 				<details className="my-5">
-					<summary className="cursor-pointer text-lg text-neutral-400 w-[1000px] mx-auto mb-5">
+					<summary className="cursor-pointer text-lg text-neutral-400 lg:w-[1000px] mx-auto mb-5">
 						查看服务器的完整发展历程
 					</summary>
-					<div className="grid grid-cols-4 items-stretch p-5">
-						<div className="flex flex-col items-center text-center gap-3 px-8 border-r border-r-neutral-200">
+					<div className="flex flex-col lg:grid lg:grid-cols-4 items-stretch lg:p-5">
+						<div className="flex flex-col items-center text-center gap-3 py-6 lg:py-0 lg:px-8 border-b lg:border-b-0 lg:border-r border-neutral-200">
 							<div className="flex flex-col items-center gap-1">
 								<h3 className="text-lg font-bold">
 									一个叫做 LANDLiFE 的小小服务器
@@ -132,7 +145,7 @@ export default function Index() {
 								模板编写的简易网站和种着各种模组里的奇怪花草树木的空岛主城。
 							</p>
 						</div>
-						<div className="flex flex-col items-center text-center gap-3 px-6  border-r border-r-neutral-200">
+						<div className="flex flex-col items-center text-center gap-3 py-6 lg:py-0 lg:px-6 border-b lg:border-b-0 lg:border-r border-neutral-200">
 							<div className="flex flex-col items-center gap-1">
 								<h3 className="text-lg font-bold">SoTap 的一个子服务器</h3>
 								<div className="text-center text-neutral-500">2019-2023</div>
@@ -143,7 +156,7 @@ export default function Index() {
 								提供的计算资源运行，主打周目模组玩法。峰值玩家个数 12 名。
 							</p>
 						</div>
-						<div className="flex flex-col items-center text-center gap-3 px-6 border-r border-r-neutral-200">
+						<div className="flex flex-col items-center text-center gap-3 py-6 lg:py-0 lg:px-6 border-b lg:border-b-0 lg:border-r border-neutral-200">
 							<div className="flex flex-col items-center gap-1">
 								<h3 className="text-lg font-bold">独立运行的 Seati</h3>
 								<div className="text-center text-neutral-500">2024</div>
@@ -154,7 +167,7 @@ export default function Index() {
 								SoTap 服务器。于 2024 年 9 月解散。
 							</p>
 						</div>
-						<div className="flex flex-col items-center text-center gap-3 px-6">
+						<div className="flex flex-col items-center text-center gap-3 py-6 lg:py-0 lg:px-6">
 							<div className="flex flex-col items-center gap-1">
 								<h3 className="text-lg font-bold">现在你所看到的 SEATiDE</h3>
 								<div className="text-center text-neutral-500">2026</div>
@@ -245,7 +258,7 @@ export default function Index() {
 			/>
 			<Hr />
 			<section id="section-faq" className="flex flex-col items-center py-20">
-				<div className="w-[1000px] flex flex-col gap-3">
+				<div className="lg:w-[1000px] w-full px-5 lg:px-0 flex flex-col gap-3">
 					<h2 className="text-3xl font-bold leading-snug text-center">FAQ</h2>
 					<div className="mt-5 flex flex-col gap-6 text-lg">
 						<Summary sum="服务器 IP 地址是什么？">
@@ -293,7 +306,7 @@ export default function Index() {
 				id="section-join"
 				className="flex flex-col items-center bg-amber-50 py-20 text-center"
 			>
-				<div className="w-[1000px] flex-col flex items-center gap-5">
+				<div className="lg:w-[1000px] px-5 lg:px-0 flex-col flex items-center gap-5">
 					<div className="flex flex-col gap-3">
 						<h2 className="text-3xl font-bold leading-snug">加入 SEATiDE</h2>
 						<div className="text-xl text-neutral-500 leading-relaxed flex flex-col gap-3">
@@ -304,7 +317,7 @@ export default function Index() {
 							</p>
 						</div>
 					</div>
-					<div className="flex items-center gap-5">
+					<div className="flex items-center gap-5 flex-col lg:flex-row">
 						<a
 							href="https://v.wjx.cn/vm/m93QvcR.aspx"
 							target="_blank"
