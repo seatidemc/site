@@ -263,11 +263,12 @@ export default function Index() {
 					<div className="mt-5 flex flex-col gap-6 text-lg">
 						<Summary sum="服务器 IP 地址是什么？">
 							<p>
-								服务器的 IP 地址是动态变化的，你可以在
+								当服务器正在运行时，你可以使用域名 <strong>st.subilan.win</strong> 加入游戏。你可以在
 								<E href="https://st.subilan.win/#/status">服务器状态页面</E>
-								查看最新的服务器 IP
-								地址。另外，请注意服务器开启了白名单，而白名单需要申请。
+								查看服务器的运行状态和 IP 地址，当域名无法使用时，可直接用 IP
+								地址加入。
 							</p>
+							<p>另外，请注意服务器开启了白名单，而白名单需要申请。</p>
 						</Summary>
 						<Summary sum="服务器的游戏版本是多少？">
 							<p>
