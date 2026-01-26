@@ -301,7 +301,7 @@ export default function Index() {
 						</Summary>
 					</div>
 				</div>
-				<p className="mt-5 text-neutral-500">更多问题，欢迎加入讨论群咨询</p>
+				<p className="mt-5 text-neutral-500">更多问题，欢迎查阅<E href='https://seatidemc.github.io/wiki'>服务器文档</E></p>
 			</section>
 			<section
 				id="section-join"
